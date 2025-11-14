@@ -1,0 +1,52 @@
+{
+    "buriedness_radii": [],
+    "methods": [
+        {
+            "name": "hydrophobic",
+            "method": "hydrophobic",
+            "config": {
+                "hydrophobicity_scale": "scale_Ja.csv",
+                "patch_configs": [
+                    {
+                        "patch_min": 0.8,
+                        "name": "hydrophobic|Jain scale|0.8",
+                        "aggregate_per_residue": true
+                    }
+                ],
+                "surface_integral_cutoffs": []
+            }
+        },
+        {
+            "name": "electrostatic_7.4",
+            "method": "electrostatic",
+            "config": {
+                "pH": 7.4,
+                "patch_configs": [
+                    {
+                        "patch_cutoff": [2, -2],
+                        "name": "electrostatic|pH 7.4|2,-2",
+                        "aggregate_per_residue": true
+                    }
+                ],
+                "surface_integral_high_cutoffs": [],
+                "surface_integral_low_cutoffs": []
+            }
+        },
+        {
+            "name": "electrostatic_5.5",
+            "method": "electrostatic",
+            "config": {
+                "pH": 5.5,
+                "patch_configs": [
+                    { 
+                        "patch_cutoff": [2, -2],
+                        "name": "electrostatic|pH 5.5|2,-2",
+                        "aggregate_per_residue": true
+                    }
+                ],
+                "surface_integral_high_cutoffs": [],
+                "surface_integral_low_cutoffs": []
+            }
+        }
+    ]
+}

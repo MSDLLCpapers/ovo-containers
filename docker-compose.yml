@@ -1,0 +1,78 @@
+name: ovo
+services:
+    colabdesign:
+        build:
+          context: ./containers/colabdesign
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    colabdesign-cpu:
+        build:
+          context: ./containers/colabdesign
+          dockerfile: DockerfileCpu
+          # Note: we deliberately omit this for CPU build to preserve the platform of the host
+#           platforms: ['linux/x86_64']
+    rfdiffusion:
+        build:
+          context: ./containers/rfdiffusion
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    proteinmpnn-fastrelax:
+        build:
+          context: ./containers/proteinmpnn-fastrelax
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    python-structure:
+        build:
+          context: ./containers/python-structure
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    esm:
+        build:
+          context: ./containers/esm
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    huggingface-transformers:
+        build:
+          context: ./containers/huggingface-transformers
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    pep-patch:
+        build:
+          context: ./containers/pep-patch
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    dssp:
+        build:
+          context: ./containers/dssp
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    ligandmpnn:
+        build:
+          context: ./containers/ligandmpnn
+          dockerfile: Dockerfile
+          platforms: [ 'linux/x86_64' ]
+    bindcraft:
+        build:
+          context: ./containers/bindcraft
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    bindcraft-cpu:
+        build:
+          context: ./containers/bindcraft
+          dockerfile: DockerfileCpu
+          #platforms: ['linux/x86_64']
+    proteinsol:
+        build:
+          context: ./containers/proteinsol
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    boltz:
+        build:
+          context: ./containers/boltz
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
+    promb:
+      build:
+        context: ./containers/promb
+        dockerfile: Dockerfile
+        platforms: [ 'linux/x86_64' ]

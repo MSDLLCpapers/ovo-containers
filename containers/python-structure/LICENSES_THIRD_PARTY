@@ -1,0 +1,23 @@
+ Name                Version      License                                                  URL                                                                  
+ msgpack             1.1.1        Apache 2.0                                               https://msgpack.org/                                                 
+ requests            2.32.4       Apache Software License                                  https://requests.readthedocs.io                                      
+ tzdata              2025.2       Apache Software License                                  https://github.com/python/tzdata                                     
+ packaging           25.0         Apache Software License; BSD License                     https://github.com/pypa/packaging                                    
+ python-dateutil     2.9.0.post0  Apache Software License; BSD License                     https://github.com/dateutil/dateutil                                 
+ biopandas           0.5.1        BSD License                                              https://github.com/rasbt/biopandas                                   
+ idna                3.10         BSD License                                              https://github.com/kjd/idna                                          
+ networkx            3.5          BSD License                                              https://networkx.org/                                                
+ numpy               2.3.1        BSD License                                              https://numpy.org                                                    
+ pandas              2.3.1        BSD License                                              https://pandas.pydata.org                                            
+ scipy               1.16.0       BSD License                                              https://scipy.org/                                                   
+ biopython           1.85         Freely Distributable                                     https://biopython.org/                                               
+ biotraj             1.2.2        GNU Lesser General Public License v2 or later (LGPLv2+)  https://www.biotite-python.org                                       
+ charset-normalizer  3.4.2        MIT License                                              https://github.com/jawah/charset_normalizer/blob/master/CHANGELOG.md 
+ einops              0.8.1        MIT License                                              https://github.com/arogozhnikov/einops                               
+ mmtf-python         1.1.3        MIT License                                              https://github.com/rcsb/mmtf-python.git                              
+ pytz                2025.2       MIT License                                              http://pythonhosted.org/pytz                                         
+ six                 1.17.0       MIT License                                              https://github.com/benjaminp/six                                     
+ certifi             2025.7.14    Mozilla Public License 2.0 (MPL 2.0)                     https://github.com/certifi/python-certifi                            
+ looseversion        1.1.2        Python Software Foundation License                       https://github.com/effigies/looseversion                             
+ biotite             1.4.0        UNKNOWN                                                  https://www.biotite-python.org                                       
+ urllib3             2.5.0        UNKNOWN                                                  https://github.com/urllib3/urllib3/blob/main/CHANGES.rst   

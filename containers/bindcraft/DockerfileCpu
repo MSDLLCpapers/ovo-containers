@@ -1,0 +1,41 @@
+FROM nvcr.io/nvidia/ai-workbench/python-cuda122:1.0.3
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+# Trust additional network certificates
+ARG CERT_URL=""
+RUN if [ ! -z "$CERT_URL" ]; then curl "$CERT_URL" >> /etc/ssl/certs/ca-certificates.crt; fi
+ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+ARG PYROSETTA_PLATFORM=https://graylab.jhu.edu/download/PyRosetta4/archive/release/PyRosetta4.Release.python310.aarch64
+
+# Dependencies
+RUN apt-get update \
+    && apt-get install -y bzip2 libgfortran5 ffmpeg \
+	&& apt-get clean && rm -rf /var/cache/apt/lists /var/lib/apt/lists
+
+# Clone and install ColabDesign (AlphaFold2, ProteinMPNN)
+RUN git clone --depth 1 https://github.com/sokrypton/ColabDesign.git /opt/colabdesign \
+	&& cd /opt/colabdesign \
+	&& pip install --no-cache-dir . \
+	&& pip install --no-cache-dir matplotlib==3.7.1 numpy"<2.0.0" seaborn tqdm
+
+# Install PyRosetta
+RUN cd /tmp; LATEST=$(curl $PYROSETTA_PLATFORM/latest.html | grep -i '<meta http-equiv="REFRESH"' | sed -n 's/.*url=\([^"]*\).*/\1/p') \
+    && curl $PYROSETTA_PLATFORM/$LATEST > pyrosetta.tar.bz2 \
+    && tar -xvjf pyrosetta.tar.bz2 \
+    && cd ./PyRosetta4.*/setup \
+    && python setup.py install \
+    && python -c 'import pyrosetta; print(pyrosetta.__file__); pyrosetta.init()' \
+    && cd /tmp && rm pyrosetta.tar.bz2 && rm -r PyRosetta4.*
+
+# Clone BindCraft repository
+RUN mkdir -p /content/ \
+  && git clone --depth 1 https://github.com/martinpacesa/BindCraft /content/bindcraft/ \
+  && chmod +x /content/bindcraft/functions/dssp \
+  && chmod +x /content/bindcraft/functions/DAlphaBall.gcc
+
+# Do not require GPU in this CPU version
+RUN sed -i 's/^check_jax_gpu()/#check_jax_gpu()/' /content/bindcraft/bindcraft.py
+
+WORKDIR /

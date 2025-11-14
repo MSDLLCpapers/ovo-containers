@@ -1,0 +1,8 @@
+ Name             Version      License                               URL                                  
+ tzdata           2025.2       Apache Software License               https://github.com/python/tzdata     
+ python-dateutil  2.9.0.post0  Apache Software License; BSD License  https://github.com/dateutil/dateutil 
+ numpy            2.3.1        BSD License                           https://numpy.org                    
+ pandas           2.3.1        BSD License                           https://pandas.pydata.org            
+ biopython        1.85         Freely Distributable                  https://biopython.org/               
+ pytz             2025.2       MIT License                           http://pythonhosted.org/pytz         
+ six              1.17.0       MIT License                           https://github.com/benjaminp/six 

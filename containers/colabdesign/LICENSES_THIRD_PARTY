@@ -1,0 +1,130 @@
+ Name                       Version     License                                                           URL                                                               
+ asttokens                  2.4.1       Apache 2.0                                                        https://github.com/gristlabs/asttokens                            
+ overrides                  7.4.0       Apache License, Version 2.0                                       https://github.com/mkorpela/overrides                             
+ absl-py                    2.3.1       Apache Software License                                           https://github.com/abseil/abseil-py                               
+ arrow                      1.3.0       Apache Software License                                           https://github.com/arrow-py/arrow                                 
+ bleach                     6.1.0       Apache Software License                                           https://github.com/mozilla/bleach                                 
+ chex                       0.1.89      Apache Software License                                           https://github.com/deepmind/chex                                  
+ dm-haiku                   0.0.14      Apache Software License                                           https://github.com/deepmind/dm-haiku                              
+ dm-tree                    0.1.9       Apache Software License                                           https://github.com/deepmind/tree                                  
+ jmp                        0.0.4       Apache Software License                                           https://github.com/deepmind/jmp                                   
+ json5                      0.9.14      Apache Software License                                           https://github.com/dpranke/pyjson5                                
+ ml_collections             1.1.0       Apache Software License                                           https://github.com/google/ml_collections                          
+ ml_dtypes                  0.5.1       Apache Software License                                           https://github.com/jax-ml/ml_dtypes                               
+ optax                      0.2.5       Apache Software License                                           https://github.com/google-deepmind/optax                          
+ prometheus-client          0.19.0      Apache Software License                                           https://github.com/prometheus/client_python                       
+ requests                   2.31.0      Apache Software License                                           https://requests.readthedocs.io                                   
+ tornado                    6.4         Apache Software License                                           http://www.tornadoweb.org/                                        
+ types-python-dateutil      2.8.19.14   Apache Software License                                           https://github.com/python/typeshed                                
+ tzdata                     2025.2      Apache Software License                                           https://github.com/python/tzdata                                  
+ websocket-client           1.7.0       Apache Software License                                           https://github.com/websocket-client/websocket-client.git          
+ packaging                  23.2        Apache Software License; BSD License                              https://github.com/pypa/packaging                                 
+ python-dateutil            2.8.2       Apache Software License; BSD License                              https://github.com/dateutil/dateutil                              
+ sniffio                    1.3.0       Apache Software License; MIT License                              https://github.com/python-trio/sniffio                            
+ jax                        0.5.1       Apache-2.0                                                        https://github.com/jax-ml/jax                                     
+ jax-cuda12-pjrt            0.5.1       Apache-2.0                                                        https://github.com/jax-ml/jax                                     
+ jax-cuda12-plugin          0.5.1       Apache-2.0                                                        https://github.com/jax-ml/jax                                     
+ jaxlib                     0.5.1       Apache-2.0                                                        https://github.com/jax-ml/jax                                     
+ matplotlib-inline          0.1.6       BSD 3-Clause                                                      https://github.com/ipython/matplotlib-inline                      
+ Babel                      2.14.0      BSD License                                                       https://babel.pocoo.org/                                          
+ Jinja2                     3.1.2       BSD License                                                       https://palletsprojects.com/p/jinja/                              
+ MarkupSafe                 2.1.3       BSD License                                                       https://palletsprojects.com/p/markupsafe/                         
+ Pygments                   2.17.2      BSD License                                                       https://pygments.org                                              
+ Send2Trash                 1.8.2       BSD License                                                       https://github.com/arsenetar/send2trash                           
+ comm                       0.2.0       BSD License                                                       https://github.com/ipython/comm                                   
+ contourpy                  1.3.2       BSD License                                                       https://github.com/contourpy/contourpy                            
+ cycler                     0.12.1      BSD License                                                       https://matplotlib.org/cycler/                                    
+ decorator                  5.1.1       BSD License                                                       https://github.com/micheles/decorator                             
+ fastjsonschema             2.19.0      BSD License                                                       https://github.com/horejsek/python-fastjsonschema                 
+ idna                       3.6         BSD License                                                       https://github.com/kjd/idna                                       
+ ipykernel                  6.27.1      BSD License                                                       https://ipython.org                                               
+ ipython                    8.18.1      BSD License                                                       https://ipython.org                                               
+ joblib                     1.5.1       BSD License                                                       https://joblib.readthedocs.io                                     
+ jsonpointer                2.4         BSD License                                                       https://github.com/stefankoegl/python-json-pointer                
+ jupyter-events             0.9.0       BSD License                                                       http://jupyter.org                                                
+ jupyter-lsp                2.2.1       BSD License                                                       https://github.com/jupyter-lsp/jupyterlab-lsp/issues              
+ jupyter_client             8.6.0       BSD License                                                       https://jupyter.org                                               
+ jupyter_core               5.5.0       BSD License                                                       https://jupyter.org                                               
+ jupyter_server             2.12.1      BSD License                                                       https://jupyter-server.readthedocs.io                             
+ jupyter_server_terminals   0.5.0       BSD License                                                       https://jupyter.org                                               
+ jupyterlab                 4.0.7       BSD License                                                       https://jupyter.org                                               
+ jupyterlab_pygments        0.3.0       BSD License                                                       https://github.com/jupyterlab/jupyterlab_pygments                 
+ jupyterlab_server          2.25.2      BSD License                                                       https://jupyterlab-server.readthedocs.io                          
+ kiwisolver                 1.4.8       BSD License                                                       https://github.com/nucleic/kiwi                                   
+ mistune                    3.0.2       BSD License                                                       https://github.com/lepture/mistune                                
+ nbclient                   0.9.0       BSD License                                                       https://jupyter.org                                               
+ nbconvert                  7.12.0      BSD License                                                       https://jupyter.org                                               
+ nbformat                   5.9.2       BSD License                                                       https://jupyter.org                                               
+ nest-asyncio               1.5.8       BSD License                                                       https://github.com/erdewit/nest_asyncio                           
+ notebook_shim              0.2.3       BSD License                                                       UNKNOWN                                                           
+ numpy                      2.2.6       BSD License                                                       https://numpy.org                                                 
+ pandas                     2.3.1       BSD License                                                       https://pandas.pydata.org                                         
+ pandocfilters              1.5.0       BSD License                                                       http://github.com/jgm/pandocfilters                               
+ prompt-toolkit             3.0.43      BSD License                                                       https://github.com/prompt-toolkit/python-prompt-toolkit           
+ psutil                     5.9.6       BSD License                                                       https://github.com/giampaolo/psutil                               
+ pycparser                  2.21        BSD License                                                       https://github.com/eliben/pycparser                               
+ python-json-logger         2.0.7       BSD License                                                       http://github.com/madzak/python-json-logger                       
+ scipy                      1.15.3      BSD License                                                       https://scipy.org/                                                
+ terminado                  0.18.0      BSD License                                                       https://github.com/jupyter/terminado                              
+ tinycss2                   1.2.1       BSD License                                                       https://www.courtbouillon.org/tinycss2                            
+ toolz                      1.0.0       BSD License                                                       https://github.com/pytoolz/toolz/                                 
+ traitlets                  5.14.0      BSD License                                                       https://github.com/ipython/traitlets                              
+ webcolors                  1.13        BSD License                                                       https://github.com/ubernostrum/webcolors                          
+ webencodings               0.5.1       BSD License                                                       https://github.com/SimonSapin/python-webencodings                 
+ wrapt                      1.17.2      BSD License                                                       https://github.com/GrahamDumpleton/wrapt                          
+ pyzmq                      25.1.2      BSD License; GNU Library or Lesser General Public License (LGPL)  https://pyzmq.readthedocs.org                                     
+ biopython                  1.85        Freely Distributable                                              https://biopython.org/                                            
+ isoduration                20.11.0     ISC License (ISCL)                                                https://github.com/bolsote/isoduration                            
+ pexpect                    4.9.0       ISC License (ISCL)                                                https://pexpect.readthedocs.io/                                   
+ ptyprocess                 0.7.0       ISC License (ISCL)                                                https://github.com/pexpect/ptyprocess                             
+ fonttools                  4.58.5      MIT                                                               http://github.com/fonttools/fonttools                             
+ PyYAML                     6.0.1       MIT License                                                       https://pyyaml.org/                                               
+ anyio                      4.1.0       MIT License                                                       https://anyio.readthedocs.io/en/stable/versionhistory.html        
+ argon2-cffi                23.1.0      MIT License                                                       https://github.com/hynek/argon2-cffi/blob/main/CHANGELOG.md       
+ argon2-cffi-bindings       21.2.0      MIT License                                                       https://github.com/hynek/argon2-cffi-bindings                     
+ async-lru                  2.0.4       MIT License                                                       https://github.com/aio-libs/async-lru                             
+ attrs                      23.1.0      MIT License                                                       https://www.attrs.org/en/stable/changelog.html                    
+ beautifulsoup4             4.12.2      MIT License                                                       https://www.crummy.com/software/BeautifulSoup/bs4/                
+ cffi                       1.16.0      MIT License                                                       http://cffi.readthedocs.org                                       
+ charset-normalizer         3.3.2       MIT License                                                       https://github.com/Ousret/charset_normalizer                      
+ debugpy                    1.8.0       MIT License                                                       https://aka.ms/debugpy                                            
+ exceptiongroup             1.2.0       MIT License                                                       https://github.com/agronholm/exceptiongroup/blob/main/CHANGES.rst 
+ executing                  2.0.1       MIT License                                                       https://github.com/alexmojaki/executing                           
+ immutabledict              4.2.1       MIT License                                                       https://github.com/corenting/immutabledict                        
+ jedi                       0.19.1      MIT License                                                       https://github.com/davidhalter/jedi                               
+ jsonschema                 4.20.0      MIT License                                                       https://github.com/python-jsonschema/jsonschema                   
+ jsonschema-specifications  2023.11.2   MIT License                                                       https://github.com/python-jsonschema/jsonschema-specifications    
+ opt_einsum                 3.4.0       MIT License                                                       UNKNOWN                                                           
+ parso                      0.8.3       MIT License                                                       https://github.com/davidhalter/parso                              
+ platformdirs               4.1.0       MIT License                                                       https://github.com/platformdirs/platformdirs                      
+ pure-eval                  0.2.2       MIT License                                                       http://github.com/alexmojaki/pure_eval                            
+ py3Dmol                    2.5.1       MIT License                                                       https://3dmol.org                                                 
+ pyparsing                  3.2.3       MIT License                                                       https://github.com/pyparsing/pyparsing/                           
+ pytz                       2025.2      MIT License                                                       http://pythonhosted.org/pytz                                      
+ referencing                0.32.0      MIT License                                                       https://github.com/python-jsonschema/referencing                  
+ rfc3339-validator          0.1.4       MIT License                                                       https://github.com/naimetti/rfc3339-validator                     
+ rfc3986-validator          0.1.1       MIT License                                                       https://github.com/naimetti/rfc3986-validator                     
+ rpds-py                    0.13.2      MIT License                                                       https://github.com/crate-py/rpds                                  
+ six                        1.16.0      MIT License                                                       https://github.com/benjaminp/six                                  
+ soupsieve                  2.5         MIT License                                                       https://github.com/facelessuser/soupsieve                         
+ stack-data                 0.6.3       MIT License                                                       http://github.com/alexmojaki/stack_data                           
+ tabulate                   0.9.0       MIT License                                                       https://github.com/astanin/python-tabulate                        
+ uri-template               1.3.0       MIT License                                                       https://gitlab.linss.com/open-source/python/uri-template          
+ urllib3                    2.1.0       MIT License                                                       https://github.com/urllib3/urllib3/blob/main/CHANGES.rst          
+ certifi                    2023.11.17  Mozilla Public License 2.0 (MPL 2.0)                              https://github.com/certifi/python-certifi                         
+ fqdn                       1.5.1       Mozilla Public License 2.0 (MPL 2.0)                              https://github.com/ypcrts/fqdn                                    
+ nvidia-cublas-cu12         12.9.1.4    Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cuda-cupti-cu12     12.9.79     Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cuda-nvcc-cu12      12.9.86     Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cuda-runtime-cu12   12.9.79     Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cudnn-cu12          9.11.0.98   Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cufft-cu12          11.4.1.4    Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cusolver-cu12       11.7.5.82   Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-cusparse-cu12       12.5.10.65  Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-nccl-cu12           2.27.6      Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ nvidia-nvjitlink-cu12      12.9.86     Other/Proprietary License                                         https://developer.nvidia.com/cuda-zone                            
+ defusedxml                 0.7.1       Python Software Foundation License                                https://github.com/tiran/defusedxml                               
+ matplotlib                 3.10.3      Python Software Foundation License                                https://matplotlib.org                                            
+ typing_extensions          4.9.0       Python Software Foundation License                                https://github.com/python/typing_extensions                       
+ colabdesign                1.1.2       UNKNOWN                                                           UNKNOWN                                                           
+ pillow                     11.3.0      UNKNOWN                                                           https://python-pillow.github.io 
