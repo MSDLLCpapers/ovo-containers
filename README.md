@@ -2,6 +2,8 @@
 
 This repository contains Docker container definitions for OVO pipeline modules.
 
+For more information, please refer to [OVO Containers Documentation](https://ovo.dichlab.org/docs/user_guide/containers.html)
+
 ## Building Docker Containers
 
 To build all containers, run:
