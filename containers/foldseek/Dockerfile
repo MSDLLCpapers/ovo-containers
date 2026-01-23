@@ -14,13 +14,19 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Foldseek
-RUN wget https://github.com/steineggerlab/foldseek/releases/download/10-941cd33/foldseek-linux-arm64.tar.gz && \
+# Install Foldseek (AMD x86_64)
+RUN wget https://github.com/steineggerlab/foldseek/releases/download/10-941cd33/foldseek-linux-avx2.tar.gz && \
+    tar xvzf foldseek-linux-avx2.tar.gz && \
+    rm foldseek-linux-avx2.tar.gz
+
+# Also install Foldseek for ARM - Mac M1, will be in /arm/foldseek/bin/foldseek
+RUN mkdir arm; cd arm; wget https://github.com/steineggerlab/foldseek/releases/download/10-941cd33/foldseek-linux-arm64.tar.gz && \
     tar xvzf foldseek-linux-arm64.tar.gz && \
     rm foldseek-linux-arm64.tar.gz
 
-# Add Foldseek to PATH
-ENV PATH=/foldseek/bin/:$PATH
+# Create wrapper foldseek script that chooses the correct binary
+RUN echo 'FOLDSEEK=/foldseek/bin/foldseek; $FOLDSEEK -h 2>/dev/null >/dev/null || export FOLDSEEK=/arm/foldseek/bin/foldseek; $FOLDSEEK $@' \
+    > /usr/bin/foldseek; chmod a+x /usr/bin/foldseek
 
 # Install pip dependencies
 RUN pip install --no-cache-dir biopython==1.85 pandas 
