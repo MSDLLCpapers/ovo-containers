@@ -76,3 +76,13 @@ services:
         context: ./containers/promb
         dockerfile: Dockerfile
         platforms: [ 'linux/x86_64' ]
+    protein-cluster:
+      build:
+        context: ./containers/protein-cluster
+        dockerfile: Dockerfile
+        platforms: ['linux/x86_64']
+    foldseek:
+      build:
+        context: ./containers/foldseek
+        dockerfile: Dockerfile
+        platforms: ['linux/x86_64']

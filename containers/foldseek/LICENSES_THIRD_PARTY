@@ -1,0 +1,9 @@
+ Name             Version      License                                             URL                                  
+ python-dateutil  2.9.0.post0  Apache Software License; BSD License                https://github.com/dateutil/dateutil 
+ tzdata           2025.3       Apache-2.0                                          https://github.com/python/tzdata     
+ pandas           2.3.3        BSD License                                         https://pandas.pydata.org            
+ numpy            2.4.1        BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0  https://numpy.org                    
+ biopython        1.85         Freely Distributable                                https://biopython.org/               
+ foldseek         10-941cd33   GPL-3.0 license                                     https://github.com/steineggerlab/foldseek
+ pytz             2025.2       MIT License                                         http://pythonhosted.org/pytz         
+ six              1.17.0       MIT License                                         https://github.com/benjaminp/six     
