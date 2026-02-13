@@ -86,3 +86,8 @@ services:
         context: ./containers/foldseek
         dockerfile: Dockerfile
         platforms: ['linux/x86_64']
+    rdkit:
+      build:
+        context: ./containers/rdkit
+        dockerfile: Dockerfile
+        platforms: ['linux/x86_64']
