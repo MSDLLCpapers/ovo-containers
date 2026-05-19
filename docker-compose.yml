@@ -91,3 +91,8 @@ services:
         context: ./containers/rdkit
         dockerfile: Dockerfile
         platforms: ['linux/x86_64']
+    rc-foundry:
+        build:
+          context: ./containers/rc-foundry
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
