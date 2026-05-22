@@ -1,0 +1,31 @@
+FROM nvcr.io/nvidia/ai-workbench/python-cuda122:1.0.3
+
+RUN ln -s /usr/bin/python3 /usr/bin/python
+
+
+ENV PIP_INDEX_URL="https://artifacts.merck.com/artifactory/api/pypi/pypi-main/simple"
+
+# Trust additional network certificates
+ARG CERT_URL=""
+RUN if [ ! -z "$CERT_URL" ]; then curl "$CERT_URL" >> /etc/ssl/certs/ca-certificates.crt; fi
+ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+
+# Dependencies
+RUN apt-get update \
+    && apt-get install -y bzip2 libgfortran5 ffmpeg \
+	&& apt-get clean && rm -rf /var/cache/apt/lists /var/lib/apt/lists
+
+# Install uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+
+# Clone and install mosaic with uv (handles all git-sourced deps)
+RUN git clone https://github.com/escalante-bio/mosaic.git /opt/mosaic
+    
+WORKDIR /opt/mosaic
+
+RUN uv sync --group jax-cuda \
+    && uv cache clean
+
+ENV PATH="/opt/mosaic/.venv/bin:$PATH"
+
+WORKDIR /app
