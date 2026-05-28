@@ -5,7 +5,7 @@ ARG CERT_URL=""
 
 # Install system dependencies
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends git ca-certificates wget \
+    && apt-get install -y --no-install-recommends git ca-certificates wget gcc g++ libc6-dev procps \
     && rm -rf /var/lib/apt/lists/* \
     && if [ -n "$CERT_URL" ]; then \
         wget -O - "$CERT_URL" >> /etc/ssl/certs/ca-certificates.crt; \
