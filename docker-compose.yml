@@ -96,3 +96,8 @@ services:
           context: ./containers/rc-foundry
           dockerfile: Dockerfile
           platforms: ['linux/x86_64']
+    mosaic:
+        build:
+          context: ./containers/mosaic
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
