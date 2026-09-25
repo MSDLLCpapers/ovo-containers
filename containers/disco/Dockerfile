@@ -38,7 +38,10 @@ RUN python3.12 -m ensurepip --upgrade \
 RUN git clone --depth 1 https://github.com/NVIDIA/cutlass.git /opt/cutlass
 ENV CUTLASS_PATH=/opt/cutlass
 
-# DISCO source
+# DISCO source: Note that we're using a fork of the DISCO repo, because the original 
+# requires downloading model files from HF at run time, which can now be overwritten 
+# by environment variables and loaded from local model checkpoints: 
+# DISCO_COMPONENTS_CIF, DISCO_COMPONENTS_PKL, and DISCO_DPLM_650M_PATH.
 RUN git clone --depth 1 https://github.com/hugohrban/DISCO.git /opt/DISCO
 WORKDIR /opt/DISCO
 
