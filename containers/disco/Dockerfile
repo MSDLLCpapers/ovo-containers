@@ -2,9 +2,20 @@ FROM nvidia/cuda:12.2.2-devel-ubuntu22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# COPYed from the build context so we don't need curl to fetch it.
-COPY local-certs.pem /usr/local/share/ca-certificates/local-certs.crt
-RUN cat /usr/local/share/ca-certificates/local-certs.crt >> /etc/ssl/certs/ca-certificates.crt
+# Optionally rewrite the apt source lists at build time, e.g.
+# --build-arg APT_SED='s|http://archive.ubuntu.com/ubuntu|https://<mirror-ubuntu>|g'
+# You can chain multiple expressions with `;`
+ARG APT_SED=""
+RUN if [ -n "$APT_SED" ]; then \
+        find /etc/apt/sources.list /etc/apt/sources.list.d/ -type f 2>/dev/null | xargs -r sed -i "$APT_SED" ; \
+    fi
+
+# Trust additional network certificates
+ARG CERT_URL=""
+RUN if [ -n "$CERT_URL" ]; then \
+        apt-get update && apt-get install -y wget ca-certificates && \
+        wget -O - "$CERT_URL" >> /etc/ssl/certs/ca-certificates.crt; \
+    fi
 
 # Install Python 3.12 and runtime deps. Note: python3-pip from Ubuntu 22.04
 # is bound to the system Python 3.10 and can't run under 3.12 (no distutils);
@@ -52,10 +63,6 @@ ENV LD_LIBRARY_PATH=${CUDA_HOME}/lib64:${LD_LIBRARY_PATH}
 # Activate the venv by default
 ENV PATH=/opt/DISCO/.venv/bin:${PATH}
 ENV VIRTUAL_ENV=/opt/DISCO/.venv
-
-RUN apt-get -o Acquire::Retries=5 -o Acquire::http::Timeout=60 update \
-    && apt-get install -y --no-install-recommends wget \
-    && rm -rf /var/lib/apt/lists/*
 
 # LigandMPNN install
 ARG MODEL_PARAMS_VAR=/opt/LigandMPNN/model_params
