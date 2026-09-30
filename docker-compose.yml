@@ -96,3 +96,8 @@ services:
           context: ./containers/rc-foundry
           dockerfile: Dockerfile
           platforms: ['linux/x86_64']
+    disco:
+        build:
+          context: ./containers/disco
+          dockerfile: Dockerfile
+          platforms: ['linux/x86_64']
