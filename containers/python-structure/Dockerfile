@@ -9,6 +9,7 @@ RUN apk add --no-cache \
     bash
 
 # Install pip dependencies
-RUN pip install --no-cache-dir biopython==1.85 biopandas scipy biotite pandas einops
+# NOTE: biotite 1.7.0 is not supported by hydride 1.2.3, this restriction can be removed later if support is fixed
+RUN pip install --no-cache-dir biopython==1.85 biopandas scipy "biotite<1.7" pandas einops
 
 ENTRYPOINT []
