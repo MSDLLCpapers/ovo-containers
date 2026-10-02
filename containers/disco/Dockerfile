@@ -79,5 +79,7 @@ RUN wget -q https://files.ipd.uw.edu/pub/ligandmpnn/ligandmpnn_v_32_010_25.pt -O
 RUN wget -q https://files.ipd.uw.edu/pub/ligandmpnn/ligandmpnn_v_32_020_25.pt -O $MODEL_PARAMS_VAR/ligandmpnn_v_32_020_25.pt
 RUN wget -q https://files.ipd.uw.edu/pub/ligandmpnn/ligandmpnn_v_32_030_25.pt -O $MODEL_PARAMS_VAR/ligandmpnn_v_32_030_25.pt
 RUN wget -q https://files.ipd.uw.edu/pub/ligandmpnn/global_label_membrane_mpnn_v_48_020.pt -O $MODEL_PARAMS_VAR/global_label_membrane_mpnn_v_48_020.pt
+RUN wget -q https://files.ipd.uw.edu/pub/ligandmpnn/ligandmpnn_sc_v_32_002_16.pt -O $MODEL_PARAMS_VAR/ligandmpnn_sc_v_32_002_16.pt
+
 
 ENTRYPOINT []
