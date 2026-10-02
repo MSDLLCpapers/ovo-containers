@@ -51,6 +51,11 @@ services:
           context: ./containers/ligandmpnn
           dockerfile: Dockerfile
           platforms: [ 'linux/x86_64' ]
+    ligandmpnn-v2:
+        build:
+          context: ./containers/ligandmpnn-v2
+          dockerfile: Dockerfile
+          platforms: [ 'linux/x86_64' ]
     bindcraft:
         build:
           context: ./containers/bindcraft
